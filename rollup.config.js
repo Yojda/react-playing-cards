@@ -4,19 +4,19 @@ import typescript from '@rollup/plugin-typescript';
 import postcss from 'rollup-plugin-postcss'; // If handling CSS
 // import { terser } from 'rollup-plugin-terser'; // For minification
 
-const packageJson = require('./package.json');
+import packageJson from './package.json' with { type: 'json' };
 
 export default {
   input: 'src/index.ts', // Your library's entry point
   output: [
     {
-      file: packageJson.main,
-      format: 'cjs', // CommonJS for Node compatibility
+      file: "dist/index.cjs.js",
+      format: "cjs",
       sourcemap: true,
     },
     {
-      file: packageJson.module,
-      format: 'esm', // ES Module for tree shaking
+      file: "dist/index.esm.js",
+      format: "esm",
       sourcemap: true,
     },
   ],

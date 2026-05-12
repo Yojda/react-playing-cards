@@ -1,16 +1,32 @@
 {
-  "name": "playing-cards",
+  "name": "react-playing-cards",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+  "private": false,
+  "keywords": ["react", "cards", "playing cards", "ui components"],
+  "license": "MIT",
+  "description": "React UI component library for playing cards",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yojda/playing-cards"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "lint": "eslint src --ext .ts,.tsx",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.2.6",
+    "react-dom": "^18.0.0 || ^19.2.6"
+  },
   "devDependencies": {
     "@babel/preset-react": "^7.28.5",
     "@babel/preset-typescript": "^7.28.5",
@@ -30,8 +46,6 @@
     "jest": "^30.4.2",
     "jest-environment-jsdom": "^30.4.1",
     "postcss": "^8.5.14",
-    "react": "^19.2.6",
-    "react-dom": "^19.2.6",
     "rollup": "^4.60.3",
     "rollup-plugin-postcss": "^4.0.2",
     "storybook": "^10.3.6",
