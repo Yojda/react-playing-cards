@@ -8,7 +8,7 @@ A React component library for rendering playing cards with custom SVG designs.
 ## Installation
 
 ```bash
-npm install @yojda/react-playing-cards
+npm i @yojda/react-playing-cards
 ```
 
 ## Usage
@@ -41,6 +41,8 @@ export default function App() {
 ## Variants
 
 The library ships four visual variants of each card — `primary`, `secondary`, `tertiary`, and `quaternary` — each with its own SVG design.
+
+![Playing Card Variants](./src/public/assets/card_description.png)
 
 ## Development
 
