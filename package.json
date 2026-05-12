@@ -1,5 +1,5 @@
 {
-  "name": "react-playing-cards",
+  "name": "@yojda/react-playing-cards",
   "version": "1.0.0",
   "private": false,
   "keywords": ["react", "cards", "playing cards", "ui components"],

@@ -8,7 +8,7 @@ A React component library for rendering playing cards with custom SVG designs.
 ## Installation
 
 ```bash
-npm install react-playing-cards
+npm install @yojda/react-playing-cards
 ```
 
 ## Usage
