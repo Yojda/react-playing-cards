@@ -1,8 +1,13 @@
 {
   "name": "@yojda/react-playing-cards",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
-  "keywords": ["react", "cards", "playing cards", "ui components"],
+  "keywords": [
+    "react",
+    "cards",
+    "playing cards",
+    "ui components"
+  ],
   "license": "MIT",
   "description": "React UI component library for playing cards",
   "repository": {
