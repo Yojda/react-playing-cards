@@ -34,5 +34,5 @@ export default {
     }),
     // terser(), // Uncomment for production builds to minify
   ],
-  external: ['react', 'react-dom'], // Externalize peer dependencies
+  external: ['react', 'react-dom', "react/jsx-runtime"], // Externalize peer dependencies
 };
