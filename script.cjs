@@ -7,7 +7,7 @@ const files = fs.readdirSync(svgDir).filter(f => f.endsWith(".svg"));
 
 const imports = files.map(f => {
   const name = f.replace(".svg", "").replace(/[^a-zA-Z0-9]/g, "_");
-  return `import ${name} from "./public/assets/${f}?react";`;
+  return `import ${name} from "./public/assets/${f}";`;
 }).join("\n");
 
 const mapEntries = files.map(f => {

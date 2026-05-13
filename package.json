@@ -2,6 +2,7 @@
   "name": "@yojda/react-playing-cards",
   "version": "1.0.1",
   "private": false,
+  "type": "module",
   "keywords": [
     "react",
     "cards",
@@ -43,6 +44,7 @@
     "@storybook/addon-onboarding": "^10.3.6",
     "@storybook/addon-webpack5-compiler-swc": "^4.0.3",
     "@storybook/react-webpack5": "^10.3.6",
+    "@svgr/rollup": "^8.1.0",
     "@svgr/webpack": "^8.1.0",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",

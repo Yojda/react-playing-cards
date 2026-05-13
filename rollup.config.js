@@ -21,6 +21,7 @@ export default {
     },
   ],
   plugins: [
+    svgr(),
     resolve(),
     commonjs(),
     typescript({ tsconfig: './tsconfig.json', exclude: ["**/*.test.tsx", "**/*.stories.tsx"] }),

@@ -1,5 +1,5 @@
 {
-    "compilerOptions": {
+  "compilerOptions": {
     "target": "ES6",            // Target modern JavaScript
     "module": "ESNext",         // Use ES modules for tree shaking
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -14,8 +14,10 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true              // Let Rollup handle emits, TS only for type checking & declarations
+    "noEmit": true,             // Let Rollup handle emits, TS only for type checking & declarations
                                 // Set to false if you want tsc to emit JS files alongside Rollup
+    "moduleResolution": "bundler",
+    "ignoreDeprecations": "6.0"
   },
   "include": ["src/**/*"],      // Files to include for compilation
   "exclude": ["node_modules", "dist", "**/*.stories.tsx", "**/*.test.tsx"]
