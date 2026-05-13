@@ -2,6 +2,9 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
 import postcss from 'rollup-plugin-postcss'; // If handling CSS
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+const svgr = require("@svgr/rollup");
 // import { terser } from 'rollup-plugin-terser'; // For minification
 
 import packageJson from './package.json' with { type: 'json' };
